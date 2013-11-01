@@ -85,3 +85,9 @@ class Heroku(object):
         app.config.setdefault('CACHE_MEMCACHED_SERVERS', environ.get('MEMCACHIER_SERVERS'))
         app.config.setdefault('CACHE_MEMCACHED_USERNAME', environ.get('MEMCACHIER_USERNAME'))
         app.config.setdefault('CACHE_MEMCACHED_PASSWORD', environ.get('MEMCACHIER_PASSWORD'))
+
+        # Twilio
+        app.config.setdefault('TWILIO_ACCOUNT_SID', environ.get('TWILIO_ACCOUNT_SID'))
+        app.config.setdefault('TWILIO_AUTH_TOKEN', environ.get('TWILIO_AUTH_TOKEN'))
+        app.config.setdefault('TWILIO_CALLER_ID', environ.get('TWILIO_CALLER_ID'))
+        app.config.setdefault('TWILIO_APP_SID', environ.get('TWILIO_APP_SID'))
